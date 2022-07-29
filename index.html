@@ -26,6 +26,55 @@
 p,h3{
     font-size: 40px;
 }
+/* unvisited link */
+a:link {
+  color: red;
+}
+/*pseudo class*/
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/*pseudo element*/
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+/*multiple pseudo elements*/
+
+/*:before pseudo-element*/
+h1::before {
+  content: url(smiley.gif);
+}
+/*after pseudo-element*/
+h1::after {
+  content: url(smiley.gif);
+}
+/*marker pseudo-element*/
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+/*marker pseudo-element*/
+::selection {
+  color: red;
+  background: yellow;
+}
+/**/
 </style>
 </head>
 <body>
@@ -35,5 +84,10 @@ p,h3{
         <h3  class="hello">how are you</h3>
         <p>html,css,javascript</p>
     </div>
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+
+
+    
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
 </body>
 </html>
